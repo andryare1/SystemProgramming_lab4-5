@@ -21,6 +21,8 @@ int main(int argc, const char * argv[]) {
     circle2.display();
     cout << "ID объекта circle2: " << circle2.getId() << endl;
     
+    cout << circle1.getCount()<< endl;
+    cout << circle2.getCount() << endl;
     cout << "Количество объектов после создания: " << Circle::getCount() << endl;
     
 
@@ -31,6 +33,7 @@ int main(int argc, const char * argv[]) {
     Circle unionCircle = circle1 + circle2;
     cout << "Объединение окружности 1 и окружности 2: ";
     unionCircle.display();
+    cout << unionCircle.getCount()<< endl;
     
     cout << "Количество объектов после создания новых окружностей: " << Circle::getCount() << endl;
     int q = 0;
